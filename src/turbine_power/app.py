@@ -11,7 +11,10 @@ import pandas as pd
 from typing import List
 import mlflow
 
-mlflow.set_tracking_uri("http://20.67.15.42:5000")
+from turbine_power import MLFLOW_TRACKING_URI
+
+
+mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 
 
 class InputData(BaseModel):
@@ -42,7 +45,7 @@ async def predict(input_data: InputData):
 
     # Exercise: use the model to make predictions
     # ...
-    output = pd.Series(["TODO: implement me!"])  # replace this line
+    output = model.predict()
 
     return {"prediction": output.tolist()}
 

@@ -6,7 +6,10 @@ import mlflow
 import sklearn.pipeline
 from mlflow.entities.model_registry import ModelVersion
 
-mlflow.set_tracking_uri("http://20.67.15.42:5000")
+from turbine_power import MLFLOW_TRACKING_URI
+
+
+mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 
 
 def load_model(model_name: str, stage: str) -> sklearn.pipeline.Pipeline:

@@ -6,13 +6,14 @@ import pandas as pd
 import plotly.express as px
 
 from turbine_power.model_utils import get_feature_names, load_model
+from turbine_power import MLFLOW_TRACKING_URI
 
 def run_inference():
     
     stage = "production"
     model_name = "turbine-model"
     print(f"Loading model '{model_name}' from stage '{stage}'...")
-    mlflow.set_tracking_uri("http://20.67.15.42:5000")
+    mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
     model = load_model(model_name, stage)
     features = get_feature_names(model_name, stage)
 

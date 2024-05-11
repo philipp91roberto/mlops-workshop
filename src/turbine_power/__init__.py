@@ -2,3 +2,5 @@
 # This file does nothing, except that it indicates that the `/turbine_power` folder 
 # contains code that can be installed similar to how we install, for example, `pandas`.
 # More info can be found in setup.cfg and pyproject.toml.
+
+MLFLOW_TRACKING_URI = "http://74.241.163.83:5000/"

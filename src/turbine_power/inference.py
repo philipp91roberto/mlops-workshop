@@ -1,5 +1,5 @@
 """This module is only used for illustration purposes and runs 
-the same code as in the notebook 03-load-model-for-inference.ipynb"""
+the same code as in the notebook 04-load-model-for-inference.ipynb"""
     
 import mlflow
 import pandas as pd

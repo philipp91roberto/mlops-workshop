@@ -11,11 +11,6 @@ import pandas as pd
 from typing import List
 import mlflow
 
-from turbine_power import MLFLOW_TRACKING_URI
-
-
-mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
-
 
 class InputData(BaseModel):
     wind_speed: List[float] = Field(examples=[[10, 11]])
@@ -45,7 +40,7 @@ async def predict(input_data: InputData):
 
     # Exercise: use the model to make predictions
     # ...
-    output = model.predict()
+    output = model.predict(X)
 
     return {"prediction": output.tolist()}
 

@@ -9,7 +9,6 @@ from turbine_power import model_utils
 import uvicorn
 import pandas as pd
 from typing import List
-import mlflow
 
 
 class InputData(BaseModel):

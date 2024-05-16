@@ -3,4 +3,4 @@
 # contains code that can be installed similar to how we install, for example, `pandas`.
 # More info can be found in setup.cfg and pyproject.toml.
 
-MLFLOW_TRACKING_URI = "http://74.241.163.83:5000/"
+MLFLOW_TRACKING_URI = "http://<mlflow-server-ip-address>:5000/"

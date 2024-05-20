@@ -2,7 +2,7 @@
 # It specifies which files to copy into the container, which 
 # packages to install, and which command to run for the application.
 
-# Ruild using: docker build -t <image-name> .
+# Build using: docker build -t <image-name> .
 # Run using: docker run -p 8080:8080 <image-name>
 
 # Use an official Python runtime as a parent image

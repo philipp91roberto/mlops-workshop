@@ -14,7 +14,7 @@ WORKDIR /app
 # Copy dependencies into the container at /app
 COPY pyproject.toml /app
 
-# Install depencies only, avoids re-installing all dependencies when the code changes
+# Install dependencies only, avoids re-installing all dependencies when the code changes
 RUN pip install .
 
 # Now copy the code into the container at /app
